@@ -2,7 +2,7 @@ import axios from "axios";
 
 /* Instancia uma constante que utiliza axios para fazer requisições no url informado (Local onde esta hospedado o DataBase) */
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://webrecipes.onrender.com",
 });
 
 /*Os interceptors permitem modificar ou realizar ações antes que uma requisição HTTP seja enviada. Config é o objeto de configuração da requisição HTTP, que contém detalhes como URL, método, cabeçalhos, etc. */
@@ -27,7 +27,7 @@ async function refreshAccessToken() {
   if (!refreshToken) return null;
 
   try {
-    const response = await axios.post('http://localhost:3000/refresh', { token: refreshToken });
+    const response = await axios.post('https://webrecipes.onrender.com/refresh', { token: refreshToken });
     const newAccessToken = response.data.accessToken;
     localStorage.setItem('accessToken', newAccessToken);
     return newAccessToken;
@@ -55,7 +55,7 @@ api.interceptors.response.use(
         }
 
         /* Solicita um novo token de acesso usando o refresh token */
-        const { data } = await axios.post("http://localhost:3000/refresh", {
+        const { data } = await axios.post("https://webrecipes.onrender.com/refresh", {
           token: refreshToken,
         });
 

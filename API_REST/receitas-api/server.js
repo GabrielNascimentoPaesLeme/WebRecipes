@@ -267,5 +267,5 @@ app.get("/recipes", async (req, res) => {
 })
 
 /* Define a porta na qual o servidor está escutando requisições */
-app.listen(3000)
+app.listen(baseUrl || 3000)
 
