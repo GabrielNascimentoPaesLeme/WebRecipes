@@ -69,7 +69,7 @@ mongoose.connect(
 
 /* Usa o CORS para fazer controle dos methodos e requisições permitidos */
 app.use(cors({
-  origin: ['http://localhost:5173' || 'https://web-recipes-smoky.vercel.app/'],// Permite requisições do seu front-end]
+  origin: ['http://localhost:5173', 'https://web-recipes-smoky.vercel.app'],// Permite requisições do seu front-end]
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Permite métodos específicos
   allowedHeaders: ['Content-Type', 'Authorization'] // Define os cabeçalhos permitidos nas requisições
 }));
