@@ -62,8 +62,7 @@ app.use(express.json())
 
 const baseUrl = process.env.DATABASE_URL
 mongoose.connect(
-  baseUrl,
-  { useNewUrlParser: true, useUnifiedTopology: true }
+  baseUrl
 )
   .then(() => console.log("Connected to MongoDB Atlas"))
   .catch((error) => console.error("Error connecting to MongoDB", error));
@@ -267,5 +266,9 @@ app.get("/recipes", async (req, res) => {
 })
 
 /* Define a porta na qual o servidor está escutando requisições */
-app.listen(baseUrl || 3000)
+const PORT = process.env.PORT || 3000;  // Se não estiver no Render, vai usar a porta 3000 por padrão
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 
