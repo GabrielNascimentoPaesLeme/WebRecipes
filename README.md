@@ -1,8 +1,8 @@
-# Recipe Manager API & Frontend
+# WebRecipes
 
 ## Descrição do Projeto
 
-O **Recipe Manager** é uma aplicação web que permite aos usuários gerenciar suas receitas culinárias, oferecendo funcionalidades como criação, edição, visualização, pesquisa, e favoritar receitas. A aplicação tem uma arquitetura de backend baseada em **Node.js** com **Express** e um frontend construído com **React.js**. A autenticação é feita utilizando **JWT**, com funcionalidades de registro e login.
+O **WebRecipes** é uma aplicação web que permite aos usuários gerenciar receitas culinárias, oferecendo funcionalidades como criação, edição, visualização, pesquisa, e favoritar receitas. A aplicação tem uma arquitetura de backend baseada em **Node.js** com **Express** e um frontend construído com **React.js**. A autenticação é feita utilizando **JWT**, com funcionalidades de registro e login.
 
 ## Tecnologias Utilizadas
 
