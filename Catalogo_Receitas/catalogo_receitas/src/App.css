@@ -1,0 +1,37 @@
+body.light {
+  background-color: #e5e9ee;
+  color: #212529;
+}
+
+body.dark {
+  background-color: #0a071b;
+  color: #f8f9fa;
+}
+
+.navbar.dark {
+  background-color: #212529;
+}
+
+.navbar.light {
+  background-color: #f8f9fa;
+}
+
+.modal-dark {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.modal-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.card-dark {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.card-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}

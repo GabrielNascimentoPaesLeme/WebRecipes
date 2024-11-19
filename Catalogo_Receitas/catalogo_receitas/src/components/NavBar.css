@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar.light {
+  background-color: #f8f9fa; /* Cor clara */
+  color: #212529;
+}
+
+.navbar.dark {
+  background-color: #343a40; /* Cor escura */
+  color: #f8f9fa;
+}
+
+.navbar-light .nav-link {
+  color: #212529;
+}
+
+.navbar-dark .nav-link {
+  color: #f8f9fa;
+}
+
+.navbar-light .nav-link:hover,
+.navbar-dark .nav-link:hover {
+  color: #007bff; /* Cor ao passar o mouse sobre o link */
+}
+
+.align-items-center {
+  padding: 0px 5px;
+  margin: auto;
+  background-color: #111;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 29px;
+  width: 60px;
+  transform: scale(1);
+}
+
+.theme-icon {
+  gap: 0px;
+  border: none;
+  align-items: center;
+}
+
+.ball {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 2px;
+
+  height: 24px;
+  width: 24px;
+
+  transition: left 0.3s ease-in-out;
+}
+
+.ball.ball-light {
+  left: 2px;
+}
+
+.ball.ball-dark {
+  left: 35px;
+}
+
+/* Ajustando o ícone para escuro/claro */
+.theme-icon svg {
+  transition: fill 0.3s ease;
+}
+
+.theme-icon .fa-sun {
+  fill: #ffc107;
+}
+
+.theme-icon .fa-moon {
+  color: #212529;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+.d-flex.me-auto.ms-auto {
+  width: 50%;
+}
+
+.me-2.form-control {
+  margin: 0 !important;
+  border-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.btn.btn-outline-success {
+  border-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #198754;
+  color: #fff;
+  opacity: 1;
+}
+
+.btn.btn-outline-success:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: inherit; /* Manter o mesmo tema */
+  }
+
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+body {
+  padding-top: 60px; /* Ajuste conforme o tamanho da Navbar */
+}

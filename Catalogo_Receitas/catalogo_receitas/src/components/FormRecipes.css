@@ -1,0 +1,49 @@
+.carousel-item {
+  /* Defina a altura do carrossel */
+  height: 250px; /* Altere para o tamanho que você quiser */
+  width: 450px;
+}
+
+.carousel-image {
+  /* Ajuste o tamanho das imagens para ocupar todo o espaço disponível */
+  object-fit: cover; /* Faz a imagem preencher a área sem distorção */
+  height: 100%; /* Garante que a altura da imagem se ajuste ao tamanho do carrossel */
+  width: 100%; /* Garante que a largura da imagem se ajuste ao tamanho do carrossel */
+}
+
+div.card {
+  cursor: pointer;
+}
+
+div.card-dark:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+div.card-dark,
+.card-title-dark {
+  background-color: #122035;
+  color: #d6e0ec;
+  opacity: 1;
+}
+
+div.modal-dark {
+  background-color: #122035;
+}
+
+div.modal-dark .btn-close {
+  background-color: #fff;
+  opacity: 1;
+}
+
+div.modal-dark.modal-footer {
+  border: none;
+}
+
+div.modal-content {
+  background-color: transparent;
+}
+
+div.card-body {
+  text-align: center;
+}

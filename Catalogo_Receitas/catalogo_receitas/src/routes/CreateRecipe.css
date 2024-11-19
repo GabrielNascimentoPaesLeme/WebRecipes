@@ -1,0 +1,40 @@
+.containerCreate {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0 2%; /* Margem lateral de 2% */
+}
+
+.formRecipe {
+  flex: 0 0 30%; /* Ocupa 30% da largura */
+  padding: 20px;
+  background-color: #f5f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.createdRecipe {
+  flex: 0 0 65%; /* Ocupa 65% da largura */
+  background-color: #f5f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.createdRecipe.createdRecipe-dark {
+  color: #111111c7;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .containerCreate {
+    flex-direction: column; /* Colocar as divs uma abaixo da outra */
+  }
+
+  .formRecipe,
+  .createdRecipe {
+    flex: 1 0 100%; /* Ocupa 100% da largura */
+    margin-bottom: 20px;
+  }
+}
