@@ -45,8 +45,6 @@ async function favoritedRecipe(dispatch, id, favorited) {
       console.error("Token não encontrado");
       return; 
     }
-
-    
     await api.post(
       "/favorite",
       { recipeId: id, favorited: favorited },
